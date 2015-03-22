@@ -1,5 +1,13 @@
 package mielleman.startrek.proxies;
 
-public abstract class CommonProxy implements IProxy {
+public class CommonProxy{
+
+	public void initSounds() {
+		
+	}
+
+	public void initRenderers() {
+
+	}
 
 }
