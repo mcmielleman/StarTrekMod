@@ -8,6 +8,7 @@ public class ItemPhaser extends Item {
 
 	public ItemPhaser() {
         setUnlocalizedName(References.MODID + "_" + Items.phaserItemName); 
+        setTextureName(References.MODID + ":" + Items.phaserItemName);
         GameRegistry.registerItem(this, Items.phaserItemName);
 	}
 
