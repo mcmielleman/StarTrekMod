@@ -2,7 +2,7 @@ package mielleman.startrek.items;
 
 import net.minecraft.item.Item;
 
-public class Items {
+public class ModItems {
 	
 	public static Item phaserItem;
 	
