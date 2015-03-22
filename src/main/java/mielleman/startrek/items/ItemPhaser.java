@@ -27,7 +27,8 @@ public class ItemPhaser extends Item {
 
             if (!world.isRemote)
             {
-                world.spawnEntityInWorld(new EntityLaser(world, player));
+            	EntityLaser laser = new EntityLaser(world, player);
+                world.spawnEntityInWorld(laser);
             }
     	}
     	return itemstack;

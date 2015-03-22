@@ -1,7 +1,8 @@
 package mielleman.startrek;
 
+import mielleman.startrek.entities.ModEntities;
 import mielleman.startrek.items.ModItems;
-import mielleman.startrek.proxies.IProxy;
+import mielleman.startrek.proxies.CommonProxy;
 import mielleman.startrek.reference.References;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -16,18 +17,20 @@ public class StarTrekMod {
 	public static StarTrekMod instance;
 	
 	@SidedProxy(clientSide = References.CLIENTPROXY, serverSide = References.SERVERPROXY)
-	public static IProxy proxy;
+	public static CommonProxy proxy;
 	
 	
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+    	proxy.initSounds();
+    	proxy.initRenderers();
     	ModItems.init();
 
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-
+    	ModEntities.init();
     }
 
     @Mod.EventHandler
