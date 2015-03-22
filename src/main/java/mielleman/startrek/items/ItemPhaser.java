@@ -1,15 +1,12 @@
 package mielleman.startrek.items;
 
+import mielleman.startrek.entities.EntityLaser;
 import mielleman.startrek.reference.References;
-import mielleman.startrek.items.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.projectile.EntitySnowball;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.entity.player.ArrowNockEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ItemPhaser extends Item {
@@ -30,7 +27,7 @@ public class ItemPhaser extends Item {
 
             if (!world.isRemote)
             {
-                world.spawnEntityInWorld(new EntitySnowball(world, player));
+                world.spawnEntityInWorld(new EntityLaser(world, player));
             }
     	}
     	return itemstack;

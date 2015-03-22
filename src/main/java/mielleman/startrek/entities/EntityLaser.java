@@ -7,6 +7,7 @@ import net.minecraft.world.World;
 
 public class EntityLaser extends EntityThrowable {
 	
+    private int explosionRadius = 3;
 	public EntityLaser(World world) {
 		super(world);
 	}
@@ -20,7 +21,14 @@ public class EntityLaser extends EntityThrowable {
 
 	@Override
 	protected void onImpact(MovingObjectPosition position) {
-		
+		this.worldObj.createExplosion(this, this.posX, this.posY, this.posZ, (float)this.explosionRadius, true);            
+	    this.setDead();
 	}
+	
+	@Override
+    protected float getGravityVelocity()
+    {
+        return 0.00F;
+    }
 
 }
