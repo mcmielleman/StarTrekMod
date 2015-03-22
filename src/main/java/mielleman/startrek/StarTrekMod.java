@@ -5,7 +5,7 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 
-@Mod(modid = References.MODID, version = References.VERSION)
+@Mod(modid = References.MODID, name = References.NAME, version = References.VERSION)
 public class StarTrekMod {
 	
     @EventHandler
