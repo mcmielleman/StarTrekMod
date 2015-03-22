@@ -1,6 +1,6 @@
 package mielleman.startrek;
 
-import mielleman.startrek.items.Items;
+import mielleman.startrek.items.ModItems;
 import mielleman.startrek.reference.References;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -12,7 +12,7 @@ public class StarTrekMod {
 	
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-    	Items.init();
+    	ModItems.init();
 
     }
 
