@@ -20,7 +20,6 @@ public class ItemPhaser extends Item {
 	
     public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer player)
     {
-
     	if(player.capabilities.isCreativeMode || player.inventory.consumeInventoryItem(Items.redstone)) {
 
             world.playSoundAtEntity(player, "random.bow", 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
