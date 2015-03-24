@@ -17,13 +17,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
+# OSX Files
 .DS_Store
 .AppleDouble
 .LSOverride
