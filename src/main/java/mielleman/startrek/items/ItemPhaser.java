@@ -19,6 +19,8 @@ public class ItemPhaser extends Item {
 
 	@SideOnly(Side.CLIENT)
 	private IIcon icon;
+	@SideOnly(Side.CLIENT)
+	public static IIcon particle;
 	
 	public ItemPhaser() {
         setUnlocalizedName(References.MODID + "_" + ModItems.phaserItemName); 
@@ -31,12 +33,13 @@ public class ItemPhaser extends Item {
     {
     	if(player.capabilities.isCreativeMode || player.inventory.consumeInventoryItem(Items.redstone)) {
 
-            world.playSoundAtEntity(player, "random.bow", 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
+            world.playSoundAtEntity(player, "random.bow", 0.5F, 3.0F / (itemRand.nextFloat() * 0.4F + 0.8F));
 
             if (!world.isRemote)
             {
             	EntityLaser laser = new EntityLaser(world, player);
                 world.spawnEntityInWorld(laser);
+                laser.posY = laser.posY - 0.5;
             }
     	}
     	return itemstack;
@@ -46,6 +49,7 @@ public class ItemPhaser extends Item {
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister register){
     	icon = register.registerIcon(References.MODID + ":" + ModItems.phaserItem);
+    	particle = register.registerIcon(References.MODID + ":" + ModItems.particleIcon);
     }
     
 	@Override
