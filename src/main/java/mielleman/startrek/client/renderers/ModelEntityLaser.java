@@ -1,4 +1,4 @@
-package mielleman.startrek.renderers;
+package mielleman.startrek.client.renderers;
 
 import java.util.ArrayList;
 
@@ -27,18 +27,5 @@ public class ModelEntityLaser extends ModelBase{
     	for (ModelRenderer part : parts){
     		part.render(mult);
     	}
-    	if(entity instanceof EntityLaser){
-    	    EntityLaser laser = (EntityLaser)entity;
-    	    EntityPlayer player = laser.getOwner();
-    	    if(player != null){
-                Tessellator tessellator = Tessellator.instance;
-                tessellator.startDrawing(GL11.GL_LINES);
-   	            tessellator.setBrightness(5);
-    	        tessellator.setColorOpaque_F(1.0F, 1.0F, 1.0F);
-   	            tessellator.addVertex(laser.posX, laser.posY, laser.posZ);
-      	        tessellator.addVertex(player.getLookVec().xCoord, player.getLookVec().yCoord, player.getLookVec().zCoord);
-                System.out.println("yeehaa");
-    	    }
-        }
     }
 }

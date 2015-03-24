@@ -55,14 +55,4 @@ public class EntityLaser extends EntityThrowable {
 		
 	}
 	
-	public EntityPlayer getOwner() {
-		if(player instanceof EntityPlayer){
-			return (EntityPlayer)player;
-		} else {
-			return null;
-		}
-		
-		
-	}
-
 }

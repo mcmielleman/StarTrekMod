@@ -1,4 +1,4 @@
-package mielleman.startrek.renderers;
+package mielleman.startrek.client.renderers;
 
 import org.lwjgl.opengl.GL11;
 
