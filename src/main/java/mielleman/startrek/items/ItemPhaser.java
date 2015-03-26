@@ -24,7 +24,6 @@ public class ItemPhaser extends Item {
 	
 	public ItemPhaser() {
         setUnlocalizedName(References.MODID + "_" + ModItems.phaserItemName); 
-        //setTextureName(References.MODID + ":" + "p");
         GameRegistry.registerItem(this, ModItems.phaserItemName);
         this.maxStackSize = 1;
 	}
@@ -48,8 +47,8 @@ public class ItemPhaser extends Item {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister register){
-    	icon = register.registerIcon(References.MODID + ":" + ModItems.phaserItem);
-    	particle = register.registerIcon(References.MODID + ":" + ModItems.particleIcon);
+    	icon = register.registerIcon(References.MODID + ":" + ModItems.phaserItemTexture);
+    	//particle = register.registerIcon(References.MODID + ":" + ModItems.particleIcon);
     }
     
 	@Override

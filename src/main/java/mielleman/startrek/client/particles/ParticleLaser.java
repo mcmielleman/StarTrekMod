@@ -9,7 +9,7 @@ public class ParticleLaser extends EntityFX{
 
 	public ParticleLaser(World world, double x, double y, double z, double motionX, double motionY, double motionZ){
 		super(world, x, y, z, motionX, motionY, motionZ);
-		this.setParticleIcon(ItemPhaser.particle);
+		//this.setParticleIcon(ItemPhaser.particle);
 		this.setRBGColorF(1.0F, 0.1F, 0.1F);
 		particleMaxAge = 5;
 		particleGravity = 0.0F;

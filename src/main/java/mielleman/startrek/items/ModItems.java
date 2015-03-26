@@ -10,6 +10,8 @@ public class ModItems {
 	
 	public static String phaserItemName = "phaserItem";
 	
+	public static String phaserItemTexture = "phaser";
+	
 	public static void init() {
 		
 		phaserItem = new ItemPhaser();
