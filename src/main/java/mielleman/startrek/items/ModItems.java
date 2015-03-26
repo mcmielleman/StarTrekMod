@@ -4,14 +4,25 @@ import net.minecraft.item.Item;
 
 public class ModItems {
 	
-	public static String particleIcon = "particleLaser";
-	
+	/*
+	 * All the item objects are defined here.
+	 */
 	public static Item phaserItem;
 	
+	/*
+	 * All the unlocalized names are defined here.
+	 */
 	public static String phaserItemName = "phaserItem";
 	
-	public static String phaserItemTexture = "phaser";
-	
+	/*
+	 * All the icons are defined here.
+	 */
+	public static String particleIcon = "particleLaser";
+	public static String phaserItemIcon = "phaser";
+
+	/*
+	 * The items objectes are made here.
+	 */
 	public static void init() {
 		
 		phaserItem = new ItemPhaser();

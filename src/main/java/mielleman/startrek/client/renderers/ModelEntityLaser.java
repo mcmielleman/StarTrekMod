@@ -12,8 +12,20 @@ import net.minecraft.entity.player.EntityPlayer;
 import org.lwjgl.opengl.GL11;
 
 public class ModelEntityLaser extends ModelBase{
-    private ArrayList<ModelRenderer> parts;
     
+	/*
+	 * In this class we define the model of the entity.
+	 */
+	
+	/*
+	 * The list of parts the model has.
+	 */
+	private ArrayList<ModelRenderer> parts;
+    
+	/*
+	 * Constructor, initializing the list of parts and the renderer,
+	 * and adding the parts.
+	 */
     public ModelEntityLaser(){
     	parts = new ArrayList<ModelRenderer>();
     	
@@ -22,6 +34,10 @@ public class ModelEntityLaser extends ModelBase{
     	main.setRotationPoint(0, 0, 0);
     	parts.add(main);
     }
+    
+    /*
+     * Rendering the parts here.
+     */
     @Override
     public void render(Entity entity, float par1, float par2, float par3, float par4, float par5, float mult) {
     	for (ModelRenderer part : parts){
