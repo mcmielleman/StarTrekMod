@@ -5,6 +5,10 @@ import net.minecraft.item.Item;
 public class ModItems {
 	
 	/*
+	 * Item file, used to store all item variables and creating the objects.
+	 */
+	
+	/*
 	 * All the item objects are defined here.
 	 */
 	public static Item phaserItem;
