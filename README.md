@@ -1,2 +1,7 @@
 # StarTrekMod
-This mod is currently being created by mielleman and Brycey92 for the Galaxy-Craft server. Its functionality will be documented eventually.
+This is a mod about Star Trek, for Minecraft.
+Its functionality will be documented gradually.
+
+mielleman - project leader/coder
+Brycey92 - project leader/coder
+TheCheeseMan48 - artist
